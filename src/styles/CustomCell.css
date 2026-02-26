@@ -1,0 +1,11 @@
+.custom-cell {
+    /* display: inline-; */
+    padding: 10px 20px;
+    
+}
+
+.custom-width {
+    /* display: inline-block; */
+    /* padding: 0 10px 0 0; */
+    width: 100%;
+}
