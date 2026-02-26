@@ -1,27 +1,29 @@
 import { carsList } from "../cars.const";
-import '../Table.css'
-import '../styles/TextCell.css'
-import '../styles/CustomCell.css'
+import '../styles/Table.css'
+import '../styles/TableCell.css'
 
 function TableRow() {
     return  <section>
 
       {carsList.map((car) => <div className="table__row">
 
-      <div> {car.brand + " " + car.model} </div> 
-      <div> {car.price} </div>  
-      <div> {car.year} </div>
+      <div className="text-cell"> {car.brand + " " + car.model} </div> 
+      <div className="text-cell"> {car.price} </div>  
+      <div className="text-cell"> {car.year} </div>
       <div className="custom-cell">
-        <select className="custom-width"> 
+        <select className="select-width"> 
         {
             car.color.map(color => <option>{color}</option>)
         }
         </select>
       </div>
 
-      <div>
-        <button disabled={car.isReserved}>
+      <div className="custom-cell">
+        <button className="order-button" disabled={car.isReserved}>
+          <span>
             Забронировать
+          </span>
+
         </button>
       </div>
 

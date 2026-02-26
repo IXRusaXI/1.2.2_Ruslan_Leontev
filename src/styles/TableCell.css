@@ -1,0 +1,23 @@
+.custom-cell {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.select-width {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.order-button {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.text-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
