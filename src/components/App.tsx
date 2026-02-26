@@ -5,11 +5,20 @@ import { carsList } from '../cars.const';
 
 
 function App() {
-  console.log(carsList);
-  return <>
-  <TableHeader />
+  const tableContent = () => {
+    if (!carsList.length) {
+      return <h1>
+        Автомобили не найдены
+      </h1>
+    } else {
+      return <TableRow />
+    }
+  }
 
-  <TableRow />
+  return <>
+    <TableHeader />
+
+    {tableContent()}
   </>;
 }
 

@@ -3,6 +3,8 @@ import '../styles/Table.css'
 import '../styles/TableCell.css'
 
 function TableRow() {
+
+
     return  <section>
 
       {carsList.map((car) => <div className="table__row">
@@ -21,9 +23,8 @@ function TableRow() {
       <div className="custom-cell">
         <button className="order-button" disabled={car.isReserved}>
           <span>
-            Забронировать
+            {car.isReserved ? 'Зарезервирован' : 'Забронировать'}
           </span>
-
         </button>
       </div>
 

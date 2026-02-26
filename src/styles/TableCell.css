@@ -12,6 +12,7 @@
 }
 
 .order-button {
+    width: 130px;
     font-size: 12px;
     font-weight: 600;
 }
